@@ -1,0 +1,26 @@
+@startuml
+actor :Empleado: as A1
+actor :Administrador: as A2
+
+rectangle "Empresa pedidos"{
+    usecase (Introducir Pedido) as IP
+    usecase (Cancelar Pedido) as CP
+    usecase (Obtener Estado Pedido) as OEP
+    usecase (Borrar Pedido) as BoP
+    usecase (Buscar Pedidos) as BuP
+    usecase (Alta Cliente) as AC
+    usecase (Buscar Cliente) as BC
+    usecase (Nuevo Producto) as NP
+    usecase (Borrar Producto) as BP
+
+}
+A1 -- IP
+A1 -- CP
+A1 -- OEP
+A1 -- BoP
+A1 -- BuP
+A1 -- AC
+A1 -- BC
+A2 -- NP
+A2 -- BP
+@enduml
