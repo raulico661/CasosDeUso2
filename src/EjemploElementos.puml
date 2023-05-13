@@ -1,0 +1,17 @@
+@startuml
+actor :Actor: as A1
+actor :Actor: as A2
+
+rectangle Sistema{
+    usecase (Caso de uso) as C1
+    usecase (Caso de uso) as C2
+    usecase (Caso de uso) as C3
+}
+
+A1 -- C1
+A1 -- C2
+A1 -- C3
+A2 -- C1
+A2 -- C3
+
+@enduml
