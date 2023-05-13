@@ -1,0 +1,17 @@
+@startuml
+actor :Socio: as A1
+actor :Bibliotecario: as A2
+
+rectangle Biblioteca{
+    usecase (Reservar Libro) as C1
+    usecase (Prestar Libro) as C2
+    usecase (Devolver Libro) as C3
+    usecase (Actualizar Catálogo) as C4
+}
+
+A1 -- C1
+A1 -- C2
+A1 -- C3
+A2 -- C2
+A2 -- C4
+@enduml
