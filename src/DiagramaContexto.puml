@@ -1,0 +1,9 @@
+@startuml
+actor :Empleado: as A1
+actor :Administrador: as A2
+
+rectangle "Empresa pedidos"{
+}
+A1 -- "Empresa pedidos"
+A2 -- "Empresa pedidos"
+@enduml
