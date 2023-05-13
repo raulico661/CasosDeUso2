@@ -1,0 +1,24 @@
+@startuml
+actor :Empleado: as A1
+usecase (Introducir Pedido) as IP
+usecase (Cancelar Pedido) as CP
+usecase (Obtener Estado Pedido) as OEP
+usecase (Buscar Pedidos) as BuP
+usecase (Alta Cliente) as AC
+usecase (Buscar Cliente) as BC
+usecase (Pago con tarjeta) as PCT
+usecase (Pago con cuenta) as PCC
+
+A1 -- IP
+A1 -- CP
+A1 -- OEP
+A1 -- BuP
+A1 -- AC
+
+AC ..> IP : extiende
+IP ..> BC : incluye
+PCT ..> IP : extiende
+PCC ..> IP : extiende
+OEP ..> BuP : incluye
+CP ..> BuP : incluye
+@enduml
