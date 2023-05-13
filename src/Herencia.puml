@@ -1,0 +1,13 @@
+@startuml
+actor :Agente: as A1
+
+usecase (EnviarSolicitud de Crédito) as C1
+usecase (EnviarSolicitud de Crédito personal) as C2
+usecase (EnviarSolicitud de Crédito empresarial) as C3
+
+
+A1 --> C1
+C2 --|> C1
+C3 --|> C1
+
+@enduml
