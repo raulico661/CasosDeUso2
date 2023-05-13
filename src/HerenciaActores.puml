@@ -1,0 +1,11 @@
+@startuml
+actor :Cliente Bancario: as A1
+actor :Cliente Corporativo: as A2
+actor :Cliente Normal: as A3
+
+A2 --|> A1
+A3 --|> A1
+
+note left of A1 : Actor antecesor
+note left of A3 : Actor descendiente
+@enduml
